@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const str = "aAiIOutT".toLowerCase();
+        const findVowels = (inputStr) => {
+            if (!inputStr || typeof str !== "string") {
+                return "Please enter a valid string";
+            }
+            //const results = {};
+            const vowels = {a: 0, e: 0, i: 0, o: 0, u: 0};
+            const l = inputStr.length;
+            for (let i = 0; i < l; i++) {
+                // Get the current character
+                const curr = inputStr[i];
+                if (vowels.hasOwnProperty(curr)) {
+                    vowels[curr]++;
+                }
+            }
+            return vowels;
+        };
+        console.log(findVowels(str));
+    </script>
+</body>
+
+</html>
