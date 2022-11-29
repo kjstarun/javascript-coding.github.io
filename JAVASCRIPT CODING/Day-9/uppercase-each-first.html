@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let str = "my name is tarun and my age is 21";
+        const firstLetter = (str) => {
+            let arr = str.split(" ");
+            for (let i = 0; i < arr.length; i++) {
+                let first = arr[i].charAt(0).toUpperCase();
+                let remain = arr[i].substring(1);
+                arr[i] = first + remain;
+            }
+            console.log(arr.join(" "));
+        }
+        firstLetter(str);
+    </script>
+</body>
+
+</html>

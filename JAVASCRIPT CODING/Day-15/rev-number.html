@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = 8789;
+        function revV1(num) {
+            let str = num.toString().split('').reverse('').join('');
+            console.log(+str);
+        }
+        revV1(num);
+        function revV2(num) {
+            var result = 0;
+            while (num != 0) {
+                result = result * 10;
+                result = result + (num % 10)
+                num = Math.floor(num / 10)
+            };
+            console.log(result);
+        }
+        revV2(num);
+    </script>
+</body>
+
+</html>
