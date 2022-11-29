@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let input = ["priya", 0, "", false, null, undefined, "ate", NaN, 9];
+        function truthy(input) {
+            let output = input.filter((item)=> Boolean(item));
+            console.log(output);
+        }
+        truthy(input);
+    </script>
+</body>
+
+</html>
