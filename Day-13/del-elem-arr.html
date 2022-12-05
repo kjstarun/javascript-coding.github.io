@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        function length(arr) {
+            arr.length = 5;
+            return arr;
+        }
+        console.log(length(arr));
+        function shift(arr) {
+            arr.shift();
+            return arr;
+        }
+        console.log(shift(arr));
+        function pop(arr) {
+            arr.pop();
+            return arr;
+        }
+        console.log(pop(arr));
+        function splice(arr) {
+            arr.splice(0, 1);
+            return arr;
+        }
+        console.log(splice(arr));
+
+    </script>
+</body>
+
+</html>
